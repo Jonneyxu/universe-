@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #34495e;
+  --accent-color: #e74c3c;
+  --text-color: #2c3e50;
+  --background-light: #f8f9fa;
+  --background-dark: #2c3e50;
+}
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+}
+
+@layer components {
+  .article-card {
+    @apply bg-white rounded-lg shadow-lg overflow-hidden;
+  }
+
+  .video-container {
+    @apply bg-white rounded-lg shadow-lg overflow-hidden;
+  }
+}
